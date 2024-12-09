@@ -4,37 +4,31 @@ Passwordless authentication with magic links for Passport.js 🔑
 
 - User signup and login without passwords
 - Supports magic links sent via email, SMS or any other method you prefer
+- Create magic links in code for inclusion in your own methods and pipelines
 - User interface agnostic: all you need is an input and a confirmation screen
 - Handles secure token generation, expiration and confirmation
 
-Originally implemented by [Tobias Lins](https://twitter.com/linstobias) for [Splitbee](https://splitbee.io) and eventually extracted for [Feedback Fish](https://feedback.fish):
-
-<div align="left">
-
-<img width="32%" alt="Screenshot 2021-01-09 at 16 55 23" src="https://user-images.githubusercontent.com/7525670/104096256-ae24fc00-529b-11eb-9d21-cebae7bc706d.png">
-
-<img width="32%" alt="Screenshot 2021-01-09 at 16 55 28" src="https://user-images.githubusercontent.com/7525670/104096254-ad8c6580-529b-11eb-9c96-d12e9d14c543.png">
-
-<img width="32%" alt="Screenshot 2021-01-09 at 16 56 24" src="https://user-images.githubusercontent.com/7525670/104096252-a9604800-529b-11eb-92d5-31a144871fe4.png">
-
-</div>
+Originally implemented by [Tobias Lins](https://twitter.com/linstobias) for [Splitbee](https://splitbee.io) and extracted
+for [Feedback Fish](https://feedback.fish), with further development by [Neil Rackett](https://github.com/neilrackett)
+for [Mesmotronic](https://mesmotronic.com)
 
 ## Usage
 
-To use magic link authentication, you have to:
+To use magic link authentication, you can:
 
 1. Setup the Passport strategy and Express routes on your server
-2. POST a request with the users email or phone number from the client once they have entered it into the login input
+2. POST a request with the user's email or phone number from the client once they have entered it into the login input; _or_
+3. Generate a magic link in code and include it in your own method
 
 ### Installation
 
 ```
-npm install passport-magic-login
+npm install @mesmotronic/passport-magic-login
 ```
 
 ### Frontend usage
 
-This is what the usage from the frontend looks like once you've set it all up. It only requires a single request:
+This is what the usage from the frontend might look like once you've set it all up. It only requires a single request:
 
 ```JS
 // POST a request with the users email or phone number to the server
