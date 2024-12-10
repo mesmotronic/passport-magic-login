@@ -61,5 +61,8 @@
   },
   "dependencies": {
     "jsonwebtoken": "^9.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
