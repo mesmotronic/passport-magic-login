@@ -1,7 +1,7 @@
 {
   "name": "@mesmotronic/passport-magic-login",
   "description": "Passwordless authentication with magic links for Passport.js 🔑",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -64,5 +64,19 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/mesmotronic/passport-magic-login/issues"
+  },
+  "homepage": "https://github.com/mesmotronic/passport-magic-login#readme",
+  "keywords": [
+    "express",
+    "passport",
+    "passport.js",
+    "magic",
+    "authentication",
+    "login",
+    "links",
+    "passwordless"
+  ]
 }
